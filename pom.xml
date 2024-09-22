@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>blog.davetheitguy</groupId>
-    <artifactId>StorageProvider</artifactId>
+    <artifactId>storage-provider</artifactId>
     <version>1.0.0</version>
     <name>Storage Provider</name>
     <description>Basic Storage Provider for Spring Boot projects</description>
