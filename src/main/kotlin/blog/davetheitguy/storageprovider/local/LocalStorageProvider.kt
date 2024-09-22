@@ -59,7 +59,7 @@ class LocalStorageProvider(config: LocalStorageConfig) : StorageProvider {
 
     override fun saveStream(name: String, stream: InputStream) {
         val file = this.file(name)
-        if(file.exists() && overwrite) file.delete()
+        if(file.exists() && overwrite && !file.delete()) throw IOException("Unable to delete existing file!")
         if(file.exists()) throw IOException("File $name exists")
         file.outputStream().use { outputStream ->
             val buffer = ByteArray(4096)
