@@ -98,7 +98,7 @@
         <repository>
             <id>github</id>
             <name>github</name>
-            <url>https://github.com/droberts-ctrlo/storage-provider</url>
+            <url>https://maven.pkg.github.com/droberts-ctrlo/storage-provider/</url>
         </repository>
     </distributionManagement>
 
